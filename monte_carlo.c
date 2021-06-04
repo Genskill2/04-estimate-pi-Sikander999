@@ -59,7 +59,7 @@ float mc_pi(int j)
     //printf("%f\n",pi);  }
     }
   return pi;
-}
+ }
 
 
 
