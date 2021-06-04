@@ -23,30 +23,15 @@ int main(void) {
     }
   }
 }
-float wallis_pi(int n)
+
+ float wallis_pi(int j)
 {
-  float s=1.0;
-  for (int i=1; i<=n; i++)
+  float i;
+  float pi=4;
+  
+  for(i=3;i<j+2;i+=2)
   {
-    s=s*(4*i*i)/((4*i*i)-1);
+    pi=pi*((i-1)/i)*((i+1)/i);
   }
-  return (2*s);
-}
-float wallis_pi(int n) {
-  int i;
-  float x,y,z,pi;
-  if(n==0) return 0;
-   for(i=1;i<=n;i++)
-   {
-     x=4*i*i;
-     y=x-1;
-     float(z)=(x)/(y);
-     if(i==1){
-        pi=z;}
-     else
-     {pi=pi*z;}
-   }
-  pi*2;
-  return pi;
-}
-      
+  return pi;  
+}     
